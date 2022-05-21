@@ -1,0 +1,268 @@
+:root {
+  --main-button-color: #ffffff;
+  --second-button-color: #2196f3;
+  --main-title-color: #212121;
+  --second-title-color: #757575;
+  --acent-color: #2196f3;
+}
+
+body {
+  font-family: roboto, sans-serif;
+  color: #212121;
+  background-color: #e5e5e5;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* -------цвет основного текста #212121---- */
+/* -----вторичный цвет текста #757575----*/
+/* -----белый #FFFFFF----- */
+/* ----акцент #2196F3----- */
+/* вторичный цвет фона #F5F4FA---- */
+
+/* -----------------header-------------------- */
+.logo {
+  color: #2196f3;
+  font-family: raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.logo-span {
+  color: #212121;
+}
+
+.header {
+  background-color: #ffffff;
+}
+
+.header-link {
+  color: #212121;
+}
+.header-link.current {
+  color: var(--acent-color);
+}
+.header-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.header-link:hover,
+.header-link:focus {
+  color: var(--acent-color);
+}
+.contact-link {
+  color: #757575;
+}
+.contact-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+.contact-link.current {
+  color: var(--acent-color);
+}
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--acent-color);
+}
+
+/* ---------decision--------- */
+.decision {
+  background-color: #2f303a;
+}
+.decision-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.button {
+  color: #212121;
+}
+.decision .button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.button.current {
+  color: var(--main-button-color);
+  background-color: var(--second-button-color);
+}
+.button.current:hover,
+.button.current:focus {
+  color: var(--second-button-color);
+  background-color: var(--main-button-color);
+}
+*/
+
+/* -------------advantages------------ */
+.advantages {
+  background-color: #e5e5e5;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.advantages-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+}
+.advantages-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--second-title-color);
+}
+/* ------ work------------------------*/
+.work {
+  background-color: #e5e5e5;
+}
+.work-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-title-color);
+}
+
+/* ---------------comand------------ */
+.comand {
+  background-color: #f5f4fa;
+}
+.comand-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-title-color);
+}
+.comand-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-title-color);
+}
+.comand-title-speciality {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-title-color);
+}
+
+/* ------------footer--------------------- */
+.footer {
+  background-color: #2f303a;
+}
+.logo-span-footer {
+  color: #ffffff;
+}
+.address-place {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.address-mail {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.address-tel {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.address-place:hover,
+.address-place:focus {
+  color: var(--acent-color);
+}
+.address-mail:hover,
+.address-mail:focus {
+  color: var(--acent-color);
+}
+.address-tel:hover,
+.address-tel:focus {
+  color: var(--acent-color);
+}
+
+/* -----------------Портфолио------------------------- */
+
+/* --------------buttons------------------ */
+.portfolio-nav .button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.portfolio-nav .active {
+  color: var(--main-button-color);
+  background-color: var(--second-button-color);
+}
+.button:hover,
+.button:focus {
+  color: var(--main-button-color);
+  background-color: var(--second-button-color);
+}
+/* ----------------portfolio---------------- */
+
+.portfolio {
+  background-color: #e5e5e5;
+}
+
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-title-color);
+}
+
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--second-title-color);
+}
