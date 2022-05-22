@@ -4,20 +4,23 @@
   --main-title-color: #212121;
   --second-title-color: #757575;
   --acent-color: #2196f3;
+  --white-color:#ffffff;
+  --acent-button-color:#188ce8;
+  --secong-bacground-color:#2f303a;
 }
 
 body {
-  font-family: roboto, sans-serif;
-  color: #212121;
-  background-color: #e5e5e5;
+  font-family: Roboto, sans-serif;
+  color: var(--main-title-color);
+  background-color: var(--white-color);
 }
-ul {
+.list {
   list-style: none;
 }
-a {
+.link {
   text-decoration: none;
 }
-
+ /* ----white-color:#ffffff-------- */
 /* -------цвет основного текста #212121---- */
 /* -----вторичный цвет текста #757575----*/
 /* -----белый #FFFFFF----- */
@@ -25,26 +28,25 @@ a {
 /* вторичный цвет фона #F5F4FA---- */
 
 /* -----------------header-------------------- */
-.logo {
-  color: #2196f3;
-  font-family: raleway, sans-serif;
+.logo{
+  color: var(--acent-color);
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
 .logo-span {
-  color: #212121;
-}
+  color: var(--main-title-color)}
 
-.header {
-  background-color: #ffffff;
+.header{
+  background-color:var(--white-color);
 }
 
 .header-link {
-  color: #212121;
+  color: var(--main-title-color);
 }
-.header-link.current {
+.current {
   color: var(--acent-color);
 }
 .header-link {
@@ -58,17 +60,14 @@ a {
   color: var(--acent-color);
 }
 .contact-link {
-  color: #757575;
+  color: var(--second-title-color)
 }
 .contact-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
-}
-.contact-link.current {
-  color: var(--acent-color);
+  color: var(--second-title-color)
 }
 .contact-link:hover,
 .contact-link:focus {
@@ -77,7 +76,7 @@ a {
 
 /* ---------decision--------- */
 .decision {
-  background-color: #2f303a;
+  background-color: var(--secong-bacground-color)
 }
 .decision-title {
   font-weight: 900;
@@ -86,11 +85,11 @@ a {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .button {
-  color: #212121;
+  color: var(--main-title-color);
 }
 .decision .button {
   font-family: inherit;
@@ -108,14 +107,13 @@ a {
 }
 .button.current:hover,
 .button.current:focus {
-  color: var(--second-button-color);
-  background-color: var(--main-button-color);
+  color: var(--main-button-color);
+  background-color: var(--acent-button-color)
 }
-*/
 
 /* -------------advantages------------ */
 .advantages {
-  background-color: #e5e5e5;
+  background-color: var(--white-color);
 }
 .visually-hidden {
   position: absolute;
@@ -145,7 +143,7 @@ a {
 }
 /* ------ work------------------------*/
 .work {
-  background-color: #e5e5e5;
+  background-color: var(--white-color);
 }
 .work-title {
   font-weight: 700;
@@ -158,7 +156,7 @@ a {
 
 /* ---------------comand------------ */
 .comand {
-  background-color: #f5f4fa;
+  background-color: var(--white-color);
 }
 .comand-title {
   font-weight: 700;
@@ -186,55 +184,46 @@ a {
 
 /* ------------footer--------------------- */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--secong-bacground-color);
 }
 .logo-span-footer {
-  color: #ffffff;
+  color: var(--white-color);
 }
 .address-place {
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--white-color);
 }
-.address-mail {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-.address-tel {
+.footer-link {
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+
 .address-place:hover,
-.address-place:focus {
-  color: var(--acent-color);
-}
-.address-mail:hover,
-.address-mail:focus {
-  color: var(--acent-color);
-}
-.address-tel:hover,
-.address-tel:focus {
+.address-place:focus,
+.footer-link:hover,
+.footer-link:focus {
   color: var(--acent-color);
 }
 
 /* -----------------Портфолио------------------------- */
 
 /* --------------buttons------------------ */
+
 .portfolio-nav .button {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-title-color);
 }
 
 .portfolio-nav .active {
@@ -249,7 +238,7 @@ a {
 /* ----------------portfolio---------------- */
 
 .portfolio {
-  background-color: #e5e5e5;
+  background-color: var(--white-color);
 }
 
 .portfolio-title {
